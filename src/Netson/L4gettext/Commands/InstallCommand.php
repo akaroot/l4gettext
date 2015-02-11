@@ -62,7 +62,8 @@ class InstallCommand extends Command {
         /**
          * check if config has been published
          */
-        $config_path         = app_path() . DIRECTORY_SEPARATOR . "config" . DIRECTORY_SEPARATOR . "packages" . DIRECTORY_SEPARATOR . "netson" . DIRECTORY_SEPARATOR . "l4gettext";
+        //$config_path         = app_path() . DIRECTORY_SEPARATOR . "config" . DIRECTORY_SEPARATOR . "packages" . DIRECTORY_SEPARATOR . "netson" . DIRECTORY_SEPARATOR . "l4gettext";
+        $config_path         = config_path("netson");
         $locales_file        = $config_path . DIRECTORY_SEPARATOR . "locales.php";
         $encodings_file      = $config_path . DIRECTORY_SEPARATOR . "encodings.php";
         $config_file         = $config_path . DIRECTORY_SEPARATOR . "config.php";
